@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="/css/student_interviews.css">
+
+<div class="main">
+    <div class="display">
+        <div id="background"></div>
+        <% if(!locals.user){%>
+            <div class="intro">
+                <div class="heading">
+                    <h1>Introducing Placement Cell</h1>
+                    <h2>by Coding Ninjas</h2>
+                    <h1 id="extra">You need to Login</h1>
+                </div>
+            </div>
+        <%} else{%>
+            <div class="intro">
+                <div class="heading">
+                    <h1>Introducing Placement Cell</h1>
+                </div>
+                <div class="subheading">
+                    <h2>by Coding Ninjas</h2>
+                </div>
+            </div>
+            <div class="section">
+                <div class="students">
+                    <h2>Students</h2>
+                    <a href="/user/add-student">
+                        <button>+</button>
+                    </a>
+                </div>
+            
+                <div class="company">
+                    <h2>All Company</h2>
+                    <a href="/user/add-interview">
+                        <button>+</button>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="student_list">
+                    <ul> 
+                        <% for(student of allstudents) { %>
+                            <li>
+                                <a href="/user/student/?id=<%=student._id%>">
+                                    <h3><%=student.name%></h3>
+                                    <a class="delete_student_button" href="/user/student/destroy?id=<%= student._id%>"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </a>
+                            </li>
+                        <%}%>
+                    </ul>
+                </div>
+    
+                <div class="company_list">
+                    <ul>
+                        <% for(interview of allinterviews) { %>
+                            <li>
+                                <a href="/user/interview/?id=<%=interview._id%>">
+                                    <h3><%=interview.company%></h3>
+                                    <a class="delete_interview_button" href="/user/interview/destroy?id=<%= interview._id%>"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </a>
+                            </li>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+            <div class="add_student_form">
+                <div class="heading">
+                    <h2>Interviews</h2>
+                    <a href="/user/placement-cell/?id=<%=user.id%>">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>     
+                </div>
+            
+                <div class="head">
+                    <h2>Company</h2>
+                    <h2>Date</h2>
+                </div>
+                <div class="list_of_interviews">
+                    <ul>
+                        <% for (interview of students.interview) {%>
+                        <li>
+                            <h3><%= interview.company%></h3>
+                            <h3><%= interview.date%></h3>
+                        </li>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+        <%}%>
+    </div>
+    
+</div>

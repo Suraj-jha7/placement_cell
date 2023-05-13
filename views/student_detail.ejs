@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="/css/student_detail.css">
+
+<div class="main">
+    <div class="display">
+        <div id="background"></div>
+        <% if(!locals.user){%>
+            <div class="intro">
+                <div class="heading">
+                    <h1>Introducing Placement Cell</h1>
+                    <h2>by Coding Ninjas</h2>
+                    <h1 id="extra">You need to Login</h1>
+                </div>
+            </div>
+        <%} else{%>
+            <div class="intro">
+                <div class="heading">
+                    <h1>Introducing Placement Cell</h1>
+                </div>
+                <div class="subheading">
+                    <h2>by Coding Ninjas</h2>
+                </div>
+            </div>
+            <div class="section">
+                <div class="students">
+                    <h2>Students</h2>
+                    <a href="/user/add-student">
+                        <button>+</button>
+                    </a>
+                </div>
+            
+                <div class="company">
+                    <h2>All Company</h2>
+                    <a href="/user/add-interview">
+                        <button>+</button>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="student_list">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h3>Ritik</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="company_list">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h3>ritik</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="add_student_form">
+                <div class="heading">
+                    <h2>Student Details</h2>
+                    <a href="/user/placement-cell/?id=<%=user.id%>">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>     
+                </div>
+                <div class="form">
+                    <form action="/user/student/update/?id=<%=student._id%>" id="new_student_form" method="post">
+                        <input type="text" name="name" placeholder="Enter Name" value="<%= student.name%>">
+                        <input type="email" name="email" placeholder="Enter Email" value="<%= student.email%>">
+                        <input type="text" name="college" placeholder="Enter College Name" value="<%= student.college%>">
+                        <input type="text" name="batch" placeholder="Enter Batch" value="<%= student.batch%>">
+                        <input type="text" name="course" placeholder="Enter Courses" value="<%= student.course%>">
+                        <% if(student.status=="placed") {%>
+                            <input type="radio" name="status" id="placed" class="status" value="placed" checked>
+                            <label for="placed">Placed</label>
+                            <input type="radio" name="status" id="not_placed" class="status" value="not_placed">
+                            <label for="not_placed">Not Placed</label>
+                        <%} if(student.status=="not_placed"){%>
+                            <input type="radio" name="status" id="placed" class="status" value="placed">
+                            <label for="placed">Placed</label>
+                            <input type="radio" name="status" id="not_placed" class="status" value="not_placed" checked>
+                            <label for="not_placed">Not Placed</label>
+                        <%}%>
+                        
+                        
+                        <button>Update</button>
+                    </form>
+                </div>
+            </div>
+            <div class="interviews">
+                <a href="/user/student/interviews?id=<%=student._id%>">
+                    <h3>Check for interviews</h3>
+                </a>
+            </div>
+        <%}%>
+    </div>
+    
+</div>

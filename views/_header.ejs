@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+
+    <div class="nav">
+        <div class="app-name">
+            <a href="/">
+                <div class="img">            
+                    <img src="https://classroom.codingninjas.com/assets-app/images/classroom-v2/common/CN-LOGO-NAME.svg" id="pic1" alt="codingninjas logo">
+                    
+                    <img src="https://classroom.codingninjas.com/assets-app/images/classroom-v2/common/CN-LOGO-ICON.svg" id="pic2" alt="">
+                    
+                </div>
+            </a>
+            <%if (locals.user) {%>
+            <div class="options">
+                <a href="/user/placement-cell">
+                    Placement Cell
+                </a>
+            </div>
+            <% }else{%>
+                <div class="options">
+                    <a href="/user/placement-cell">
+                        Placement Cell
+                    </a>
+                </div>
+            <% } %>
+
+        </div>
+        <ul class="nav-items">
+            <%if (locals.user) {%>
+                <li>
+                    <a href="/user/sign-out">
+                        <button class="register" id="logout">Logout</button>
+                    </a>
+                </li>
+            <%} else {%>
+                    <li>
+                        <a href="/user/sign-in">
+                            <button>Login</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/user/sign-up">
+                            <button class="register">Register</button>
+                        </a>
+                    </li>
+            <% } %>
+        </ul>
+    </div>
+</header>

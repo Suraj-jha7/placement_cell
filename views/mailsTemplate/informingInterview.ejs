@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Invitation</title>
+</head>
+<body>
+    <p>
+        Hi <span><b><%= student.name %></b></span>,
+    </p>
+    <br>
+    <br>
+    <p>Thank you for applying for the position of <%= interview.profile %> with us. We are glad to inform you that your interview has been scheduled for on <%= interview.date %>.</p>
+    <br>
+    <p>Kindly note the interview details:
+        <br>
+        Venue - <%= interview.address %>
+        <br>
+        Profile - <%= interview.profile %>
+        <br>
+        Date - <%= interview.date%>
+        <br>
+        Required Skills - <%= student.course %>
+        <br>
+    </p>
+    <br>
+    <p>Thank you</p>
+</body>
+</html>

@@ -1,0 +1,346 @@
+.main {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main .display {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.main .display #background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+}
+.main .display .intro {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background-color: rgb(10, 37, 65);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2% 0;
+}
+.main .display .intro .heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.main .display .intro .subheading {
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main .display .intro #extra {
+  position: absolute;
+  top: 100%;
+  left: 21%;
+  color: rgb(0, 0, 0);
+  font-size: 5.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+.main .display .section {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  border-bottom: 2px solid rgb(202, 195, 195);
+}
+.main .display .section .students {
+  width: 50%;
+  height: 100%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: flex;
+  justify-content: space-between;
+}
+.main .display .section .students h2 {
+  color: rgb(52, 51, 51);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  left: 20px;
+}
+.main .display .section .students a {
+  width: auto;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(53, 52, 52);
+  font-size: 1.2rem;
+  position: relative;
+  top: 10px;
+  left: -20px;
+}
+.main .display .section .students a button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(53, 52, 52);
+  font-size: 2.3rem;
+  position: relative;
+  top: 0rem;
+}
+.main .display .section .students a button:hover {
+  color: rgb(23, 54, 195);
+}
+.main .display .section .company {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.main .display .section .company h2 {
+  color: rgb(53, 52, 52);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  left: 20px;
+}
+.main .display .section .company a {
+  width: auto;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(53, 52, 52);
+  font-size: 1.2rem;
+  position: relative;
+  top: 10px;
+  left: -20px;
+}
+.main .display .section .company a button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(53, 52, 52);
+  font-size: 2.3rem;
+  position: relative;
+  top: 0rem;
+}
+.main .display .section .company a button:hover {
+  color: rgb(23, 54, 195);
+}
+.main .display .main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main .display .main .student_list {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .main .student_list ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.main .display .main .student_list ul li {
+  width: 80%;
+  height: 50px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .main .student_list ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .main .student_list ul li a h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main .display .main .company_list {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .main .company_list ul {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.main .display .main .company_list ul li {
+  width: 80%;
+  height: 50px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .main .company_list ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .main .company_list ul li a h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main .display .add_student_form {
+  position: absolute;
+  width: 75%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  top: 5%;
+  left: 13%;
+  border-radius: 10px;
+}
+.main .display .add_student_form .heading {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+  top: 3%;
+}
+.main .display .add_student_form .heading h2 {
+  color: rgb(23, 23, 23);
+  font-size: 1.6rem;
+  position: relative;
+  left: 2%;
+  bottom: 42%;
+  font-weight: 400;
+}
+.main .display .add_student_form .heading a {
+  position: relative;
+  right: 2%;
+}
+.main .display .add_student_form .heading a i {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+}
+.main .display .add_student_form .form {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  row-gap: 130px;
+  flex-wrap: wrap;
+  margin-left: 27px;
+  position: relative;
+  top: 5%;
+}
+.main .display .add_student_form .form input {
+  width: 30%;
+  height: 35px;
+  margin: 4% 0% 4% 12.5%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid grey;
+  background-color: transparent;
+  outline: none;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(60, 60, 61);
+}
+.main .display .add_student_form .form .status {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.main .display .add_student_form .form label {
+  position: relative;
+  top: 7px;
+  left: 18px;
+  font-size: 1.1rem;
+  color: rgb(60, 60, 61);
+  font-weight: 500;
+}
+.main .display .add_student_form .form button {
+  width: 30%;
+  height: 50px;
+  margin: 0% 0% 4% 12.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(251, 129, 62);
+  font-size: 1rem;
+  color: rgb(243, 243, 243);
+  border-radius: 40px;
+  border: none;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 20px;
+  position: relative;
+  left: 22.4%;
+}
+.main .display .add_student_form .form button:hover {
+  background-color: rgb(255, 97, 11);
+}
+.main .display .interviews {
+  position: relative;
+  width: 250px;
+  top: 100px;
+  left: 72%;
+}
+.main .display .interviews a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(60, 60, 61);
+  opacity: 0.7;
+  font-weight: 300;
+}
+.main .display .interviews a:hover {
+  text-decoration: underline;
+  color: rgb(68, 68, 163);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=student_detail.css.map */

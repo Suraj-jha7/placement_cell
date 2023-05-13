@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/css/placement.css">
+
+<div class="main">
+    <div class="display">
+
+        <% if(locals.user){%>
+            <div class="intro">
+                <div class="heading">
+                    <h1>Introducing Placement Cell</h1>
+                </div>
+                <div class="subheading">
+                    <h2>by Coding Ninjas</h2>
+                </div>
+            </div>
+            <div class="section">
+                <div class="students">
+                    <h2>Students</h2>
+                    
+                    <a class="download" href="/user/student/download">
+                        <button>Download</button>
+                    </a>
+                    
+                    <a href="/user/add-student-form">
+                        <button>+</button>
+                    </a>
+                </div>
+                <div id="sep"></div>
+                <div class="company">
+                    <h2>All Interviews</h2>
+                    
+                    <a class="download" href="/user/interview/download">
+                        <button>Download</button>
+                    </a>
+                   
+                    <a href="/user/add-interview-form">
+                        <button>+</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="student_list">
+                    <ul> 
+                        <% for(student of students) { %>
+                            <li>
+                                <a href="/user/student/?id=<%=student._id%>">
+                                    <h3><%=student.name%></h3>
+                                    <a class="delete_student_button" href="/user/student/destroy?id=<%= student._id%>"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </a>
+                            </li>
+                        <%}%>
+                    </ul>
+                </div>
+    
+                <div class="company_list">
+                    <ul>
+                        <% for(interview of interviews) { %>
+                            <li>
+                                <a href="/user/interview/?id=<%=interview._id%>">
+                                    <h3><%=interview.company%></h3>
+                                    <a class="delete_interview_button" href="/user/interview/destroy?id=<%= interview._id%>"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </a>
+                            </li>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+        <%} else{%>
+            <div class="intro">
+                <div class="heading">
+                    <h1>Introducing Placement Cell</h1>
+                    <h2>by Coding Ninjas</h2>
+                    <h1 id="extra">You need to Login</h1>
+                </div>
+            </div>
+        <%}%>
+    </div>
+    
+</div>

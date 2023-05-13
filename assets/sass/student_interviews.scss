@@ -1,0 +1,386 @@
+.main{
+    width: 100%;
+    height:auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+    .display{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        // border: 1px solid green;
+        #background{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width: 100vw;
+            height: 100vh;
+            background-color:black;
+            opacity: .5;
+        }
+
+        .intro{
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            background-color: rgb(10,37,65);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 2% 0;
+
+            .heading{
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+            }
+            .subheading{
+              
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 100;
+                    text-align: center;
+                    margin-bottom: 10px;
+            }
+            #extra{
+                position: absolute;
+                top: 100%;
+                left: 21%;
+                color: rgb(0, 0, 0);
+                font-size:5.5rem;
+                font-weight: 200;
+                text-align: center;
+            }
+        }
+        .section{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2%;
+            border-bottom:2px solid rgb(202, 195, 195) ;
+
+            .students{
+                width: 50%;
+                height: 100%;   
+                border-top:none ;
+                border-right:none ;
+                border-left:none ;
+                display: flex;
+                justify-content: space-between;
+
+                h2{
+                    color: rgb(52, 51, 51);
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    text-align: center;
+                    position: relative;
+                    left:20px;
+
+                }
+                a{
+                    width: auto;
+                    height: 100%;
+                    text-decoration: none;
+                    color: rgb(53, 52, 52);
+                    font-size: 1.2rem;
+                    position: relative;
+                    top: 10px;
+                    left:-20px;
+    
+                    button{
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        color: rgb(53, 52, 52);
+                        font-size: 2.3rem;
+                        position: relative;
+                        top: 0rem;
+                        &:hover{
+                            color: rgb(23, 54, 195);
+                        }
+                     }
+                 }
+            }
+            .company{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                border-top:none ;
+                border-right:none ;
+                border-left:none ;
+                
+                h2{
+                    color: rgb(53, 52, 52);
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    text-align: center;
+                    position: relative;
+                    left:20px;
+                }
+                a{
+                    width: auto;
+                    height: 100%;
+                    text-decoration: none;
+                    color: rgb(53, 52, 52);
+                    font-size: 1.2rem;
+                    position: relative;
+                    top: 10px;
+                    left:-20px;
+
+                    button{
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        color: rgb(53, 52, 52);
+                        font-size: 2.3rem;
+                        position: relative;
+                        top: 0rem;
+                        &:hover{
+                            color: rgb(23, 54, 195);
+                        }
+                     }
+                 }
+            }
+        }
+        .main{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .student_list{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                ul{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    li{
+                        width: 80%;
+                        height: 50px;
+                        background-color: rgb(221, 221, 221);
+                        border-radius: 7px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1.8%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 1.7rem;
+                            font-weight:600;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:center;
+                            align-items: center;
+                            h3{
+                                color: rgb(46, 46, 46);
+                                font-size: 1.3rem;
+                                font-weight:500;
+                                position: relative;
+                                left:10%;
+                                &:hover{
+                                    color: blue;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .delete_student_button{
+                    position: relative;
+                    right:2%;
+                    i{
+                        font-size: 1.3rem;
+                        color: rgb(74, 74, 74);
+                        &:hover{
+                            color: rgb(43, 43, 43);
+                        }
+                    }
+                }
+            }
+
+            .company_list{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                ul{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    li{
+                        
+                        width: 80%;
+                        height: 50px;
+                        background-color: rgb(221, 221, 221);
+                        border-radius: 7px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1.8%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        a{
+                            text-decoration: none;
+                            color: rgb(0, 0, 0);
+                            font-size: 1.7rem;
+                            font-weight:600;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:center;
+                            align-items: center;
+                            h3{
+                                color: rgb(46, 46, 46);
+                                font-size: 1.3rem;
+                                font-weight:500;
+                                position: relative;
+                                left:18%;
+                                &:hover{
+                                    color: blue;
+                                }
+                            }
+                        }
+                    }
+                }
+                .delete_interview_button{
+                    position: relative;
+                    right:2%;
+                    i{
+                        font-size: 1.3rem;
+                        color: rgb(74, 74, 74);
+                        &:hover{
+                            color: rgb(43, 43, 43);
+                        }
+                    }
+                }
+            }
+        }
+        .add_student_form{
+            position: absolute;
+            width: 35%;
+            height:90% ;
+            background-color: rgb(255, 255, 255);
+            top:5%;
+            left:31.5%;
+            border-radius: 10px;
+
+            .heading{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                position: relative;
+                top:3%;
+                
+                h2{
+                    color:rgb(23, 23, 23);
+                    font-size:1.6rem;
+                    position:relative;
+                    left: 3%;
+                    bottom:42%;
+                    font-weight: 400;
+                }
+                a{
+                    position:relative;
+                    right: 3%;
+                    i{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+
+            .head{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom:3px solid rgb(28, 28, 28) ;
+
+                h2{
+                    color:rgb(6, 6, 6);
+                    font-size:1.3rem;
+                    
+                    font-weight: 700;
+                }
+            }
+            .list_of_interviews{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    // justify-content: center;
+                    padding: 0;
+                    margin: 0;
+                    overflow: auto;
+                    &::-webkit-scrollbar{
+                        display:none;
+                    }
+                    li{
+                        width: 100%;
+                        height: 10%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        border-bottom: 1px solid rgb(159, 159, 159);
+                        margin-top: 5%;    
+
+                        h3{
+                            color:rgb(46, 46, 46);
+                            font-size:1.2rem;
+                            font-weight: 500;
+                            position: relative;
+                            left:3%;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}

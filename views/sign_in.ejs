@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/sign_in.css">
+    <div id="sign_in_body">
+        <div id="background"></div>
+        <div class="home_text">
+            <h3>Be more than a coder</h3>
+            <h2>Be a Coding Ninja</h2>
+        </div>
+        <div class="home_img">
+            <img id="img" src="	https://files.codingninjas.in/438375-17407.webp" alt="">
+            <div class="sign_in_form">
+                <div class="heading">
+                    <h2>Login</h2>
+                    <a href="/">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>     
+                </div>
+                <div class="social">
+                    <a href="/user/auth/google">
+                        <div class="google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png?20230305195327" alt="">
+                            <h2>Login with Google</h2>
+                        </div>
+                    </a>
+                    <a href="/user/auth/facebook">
+                        <div class="facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/768px-2021_Facebook_icon.svg.png?20220821121039" alt="">
+                            <h2>Login with Facebook</h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="sep">
+                    <h3>OR</h3>
+                    <h2>use your email address</h2>
+                </div>
+
+                
+                <form action="/user/create-session" method="post">
+                        <input type="text" name="email" placeholder="Enter Email">
+                        <input type="password" name="password" placeholder="Enter Password"> 
+                        <a href="/user/forget" id="forget">
+                            <h2>Forget Password?</h2>
+                        </a>              
+                        <button>Submit</button>      
+                </form>
+
+               
+            </div>
+
+        </div>
+        
+    </div>
