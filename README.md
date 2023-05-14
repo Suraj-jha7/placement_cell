@@ -4,11 +4,13 @@ Register students for an interview and download details in CSV format.
 # Features of this projects are 🚱
 ## Authentication Part
 1. Sign up with email (Validation- user have to verify email, a verification mail will sent to provided email)
-![Screenshot 2023-05-13 213149](https://github.com/Ritikthakur01/Coding-Ninjas-Placement-cell/assets/114640486/f24ec4a3-3bc3-4149-9ef7-acf0af7848a1)
+![Screenshot 2023-05-13 213149](https://github.com/Ritikthakur01/Coding-Ninjas-Placement-Cell/assets/114640486/c1f63a7e-0713-436e-93d5-a95b24aa3b0c)
+
 
 
 2. Sign in (redirect to a blank home page with a logout after sign in)
-![Screenshot 2023-05-13 213337](https://github.com/Ritikthakur01/Coding-Ninjas-Placement-cell/assets/114640486/2936e16b-45ca-44a2-b6d1-c6504c02fe15)
+![Screenshot 2023-05-13 213337](https://github.com/Ritikthakur01/Coding-Ninjas-Placement-Cell/assets/114640486/25f1eb9b-a74c-4124-8104-339d999201da)
+
 
 3. Sign out
 4. Forgot password (send a reset password link which will expire in next 5 mintues)
