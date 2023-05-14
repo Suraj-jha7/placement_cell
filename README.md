@@ -1,4 +1,4 @@
-# Coding-Ninja-Placement-cell 🦖
+# Coding-Ninjas-Placement-cell 🦖
 Register students for an interview and download details in CSV format.
 
 # Features of this projects are 🚱
