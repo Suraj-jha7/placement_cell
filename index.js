@@ -10,7 +10,7 @@ const env= require("./configs/environment")  //importing environment.js file
 
 const express= require("express")//importing express library file
 const app=express() 
-const port=env.port; //defining port number 
+const port=env.port || 8000; //defining port number 
 
 const expresslayout= require("express-ejs-layouts"); //requiring express-ejs-layouts for setting layout
 

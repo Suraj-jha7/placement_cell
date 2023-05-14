@@ -6,7 +6,7 @@
 // <-----Development--------->
 let development={
     name: process.env.PLACEMENT_CELL_DEVELOPMENT_ENVIRONMENT,
-    port: process.env.PLACEMENT_CELL_DEVELOPMENT_PORT,
+    port: process.env.PORT,
     assets_path: process.env.PLACEMENT_CELL_DEVELOPMENT_ASSETS_PATH,
     session_cookie_key: process.env.PLACEMENT_CELL_DEVELOPMENT_SESSION_COOKIE_KEY,
     db: process.env.PLACEMENT_CELL_DEVELOPMENT_DB,
@@ -38,7 +38,7 @@ let development={
 
 let production={
     name: process.env.PLACEMENT_CELL_PRODUCTION_ENVIRONMENT,
-    port: process.env.PLACEMENT_CELL_PRODUCTION_PORT,
+    port: process.env.PORT,
     assets_path: process.env.PLACEMENT_CELL_PRODUCTION_ASSETS_PATH,
     session_cookie_key: process.env.PLACEMENT_CELL_PRODUCTION_SESSION_COOKIE_KEY,
     db: process.env.PLACEMENT_CELL_PRODUCTION_DB,
