@@ -9,6 +9,7 @@ async function main(){
 
 main().then(function(data){
     //hendelling success
+    console.log("Connected to MongoDB");
     return;
 }).catch(function(err){
      //hendelling error

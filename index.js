@@ -90,5 +90,6 @@ app.listen(port,function(err){
         console.log(`Error while connecting with server : ${err}`)
         return;
     }
+    console.log(`Server is running at http://localhost:${port}`)
     return;
 })
