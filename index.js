@@ -5,7 +5,6 @@ const dotenv=require("dotenv")
 
 dotenv.config({path:"./config.env"})
 
-
 const env= require("./configs/environment")  //importing environment.js file
 
 const express= require("express")//importing express library file
@@ -14,6 +13,7 @@ const port=env.port || 8000; //defining port number
 
 const expresslayout= require("express-ejs-layouts"); //requiring express-ejs-layouts for setting layout
 
+const path=require("path")
 const db= require("./configs/mongoose")  //importing database connection
 
 const csv= require("csv-express");
@@ -37,7 +37,7 @@ app.use(expresslayout);
 app.use(cookies())
 
 app.set("view engine", "ejs");
-app.set("views","./views");
+app.set("views",path.join(__dirname, 'views'));
 
 app.set("layout extractStyles",true)
 app.set("layout extractScripts",true)
@@ -78,7 +78,8 @@ app.use(ModifiedMware.setFlash);
 // set assets path 
 app.use(express.static(env.assets_path));
 
-app.use(express.urlencoded()); //this is user to converting req.body and form data to json
+app.use(express.json());
+app.use(express.urlencoded({extended: true})); //this is user to converting req.body and form data to json
 
 app.use("/",require("./routes"))
 
