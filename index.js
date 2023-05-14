@@ -8,7 +8,7 @@ dotenv.config({path:"./config.env"})
 
 const env= require("./configs/environment")  //importing environment.js file
 
-const express= require("express") //importing express library file
+const express= require("express")//importing express library file
 const app=express() 
 const port=env.port; //defining port number 
 

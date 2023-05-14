@@ -4,7 +4,6 @@
 
 
 // <-----Development--------->
-
 let development={
     name: process.env.PLACEMENT_CELL_DEVELOPMENT_ENVIRONMENT,
     port: process.env.PLACEMENT_CELL_DEVELOPMENT_PORT,
