@@ -24,7 +24,7 @@ Register students for an interview and download details in CSV format.
 1. add students in placement cell.
 2. add interview to company.(student must be present in list before adding interview)
 3. Student will notified about its interview through email.
-4. change status i.e placed in a company or not (all interviews will removed if student's status will placed).
+4. change status i.e placed in a company or not (all interviews will removed if student's status will be placed).
 5. display of student's interviews.
 6. display of all student registered for interview in a company.
 7. Download all student details and all interviews in CSV format.
