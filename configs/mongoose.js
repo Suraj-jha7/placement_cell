@@ -3,7 +3,7 @@ const env=require("./environment") // importing environment.js file to set value
 
 async function main(){
     // connecting with mongodb
-    await mongoose.connect(`mongodb+srv://bhadauriaritik:Ritik%402000@cluster0.jpdcwug.mongodb.net/${env.db}?retryWrites=true&w=majority`)
+    await mongoose.connect(`${env.db}`)
     return;
 }
 
