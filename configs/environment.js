@@ -63,5 +63,5 @@ let development={
 // }
 
 // exporting production if production.name is defined else export development
-module.exports = eval(process.env.PLACEMENT_CELL_PRODUCTION_ENVIRONMENT) == undefined ? development : eval(process.env.PLACEMENT_CELL_PRODUCTION_ENVIRONMENT)
+module.exports = development
 
